@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="today-date">
+        <div>
+            <P>TODAY : </P>
+            <p id="tday"></p>
+        </div>
+        <div>
+            <P>DATE : </P>
+            <p id="tdate"></p>
+        </div> 
+    </div>
+
+    <div id="container">
+
+
+        <div id="header">
+            <div>
+                <span id="previcon" onclick="pMonth()">&lt;</span>
+                <h1 id="current-month"></h1>
+                <span id="nexticon" onclick="nMonth()">&gt;</span>
+
+            </div>
+            <div>
+                <span id="previcon" onclick="pYear()">&lt;</span>
+                <h1 id="year"></h1>
+                <span id="nexticon" onclick="nYear()">&gt;</span>
+            </div>
+        </div>
+
+
+        <div id="cal-body">
+            <div id="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div id="days">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
